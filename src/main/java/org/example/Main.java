@@ -77,7 +77,20 @@ public class Main {
             try {
                 br[i] = new BufferedReader(new FileReader(in_files[i]));
             } catch (FileNotFoundException e) {
-                throw new RuntimeException(e);
+                File f = new File( in_files[i]);
+
+                try {
+                    f.createNewFile();
+                } catch (IOException ex) {
+                    throw new RuntimeException(ex);
+                }
+
+                try {
+                    br[i] =  new BufferedReader(new FileReader(f));
+                } catch (FileNotFoundException ex) {
+                    throw new RuntimeException(ex);
+                }
+                //throw new RuntimeException(e);
             }
 
 
