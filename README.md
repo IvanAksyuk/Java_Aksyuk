@@ -4,6 +4,7 @@
 3. имя выходного файла, обязательное;
 4. остальные параметры – имена входных файлов, не менее одного.
 Примеры запуска из командной строки:
+
 java -jar sort_it.jar -a -i out.txt in1.txt in2.txt
 
 java -jar sort_it.jar -a -s out.txt in1.txt in2.txt
