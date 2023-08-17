@@ -1,3 +1,7 @@
+Intellij Java;
+Build system: Gradle 
+JDK: Oracle OpenJDK version 20.0.2  
+
 Значения, которые нарушают порядок, пропускаются.
 
 Пример для возрастающей последовательности целых чисел:
